@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Rozha+One&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-aws-orange: #FF9900;
+  --color-aws-squid: #232F3E;
+
+  /* Heritage Palette */
+  --color-india-saffron: #FF9933;
+  --color-india-green: #138808;
+  --color-india-blue: #000080;
+  --color-heritage-red: #D35400;
+  /* Red Fort Clay */
+  --color-rani-pink: #E1306C;
+  --color-marigold: #FFB700;
+  --color-yamuna-blue: #2C3E50;
+
+  --font-sans: "Outfit", sans-serif;
+  --font-display: "Rozha One", serif;
+
+  --image-hero-pattern: url('/assets/pattern.svg');
+}
+
+@layer base {
+  body {
+    @apply bg-aws-squid text-white font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
+}
